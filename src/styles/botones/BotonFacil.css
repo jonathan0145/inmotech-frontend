@@ -1,0 +1,28 @@
+.custom-btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 60px;
+    background-color: #003459;
+    color: #adebff;
+    text-decoration: none;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 24px;
+    letter-spacing: 2px;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 6px 6px 8px 0 #c6bacf, -6px -6px 8px 0 #f2ebfc, inset 0 0 0 0 transparent;
+    transition: box-shadow 200ms, transform 300ms cubic-bezier(.2,2,1,1);
+}
+
+.custom-btn:hover {
+    background-color: #035b78;
+    color: #adebff;
+}
+
+.custom-btn:active {
+    box-shadow: 0 0 0 transparent, 0 0 0 transparent, inset 8px 8px 12px 0px rgba(198, 186, 207, .9), inset -8px -8px 12px 0px rgba(242, 235, 252, 0.9);
+    transform: scale(.9);
+}

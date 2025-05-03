@@ -7,7 +7,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/iniciar-sesion" element={<IniciarSesionPage />} />
+        <Route path="/" element={<IniciarSesionPage />} />
         {/* Otras rutas */}
       </Routes>
     </Router>

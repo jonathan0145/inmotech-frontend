@@ -1,4 +1,5 @@
 import React from 'react';
+import BotonFacil from './botones/BotonFacil';
 
 function LoginComponent() {
   return (
@@ -14,6 +15,7 @@ function LoginComponent() {
           <input type="password" name="password" required />
         </div>
         <button type="submit">Iniciar Sesión</button>
+        <BotonFacil texto="Iniciar Sesión"/>
       </form>
     </div>
   );

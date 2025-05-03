@@ -1,0 +1,17 @@
+#contenedor{
+    background-color: #adebff;
+    height: 940px;
+    border: 1px solid transparent;
+}
+
+#menu-login{
+   background-color: #5483b3;
+   display: flex;
+   justify-content: space-evenly;
+   padding-top: 15px;
+   padding-bottom: 15px;
+}
+
+.contenedor-login-register{
+    background-color: black;
+}
