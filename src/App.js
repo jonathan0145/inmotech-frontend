@@ -2,12 +2,14 @@ import './styles/App.css';
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import IniciarSesionPage from './pages/IniciarSesionPage';
+import LoginPage from './pages/login';
 
 function App() {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<IniciarSesionPage />} />
+        <Route path="/l" element={<LoginPage />} />
         {/* Otras rutas */}
       </Routes>
     </Router>
