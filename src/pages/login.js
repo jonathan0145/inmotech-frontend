@@ -1,14 +1,14 @@
-// import React, { useState } from 'react';
 import EncabezadosL from '../components/encabezados/EncabezadoL';
-import '../styles/pages/IniciarSesionPage.css';
+import '../styles/pages/login.css';
+import InputG from '../components/inputs/InputG';
 
 
 function LoginPage() {
-//   const [activeComponent, setActiveComponent] = useState('login');
 
   return (
-    <div id='contenedor'>
+    <div id='login'>
       <EncabezadosL/>
+      <InputG etiqueta="" nombre="email" texto1="Email"/>
     </div>
   );
 }
