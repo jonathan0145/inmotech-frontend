@@ -1,14 +1,19 @@
+import React, { useState } from 'react';
 import EncabezadosL from '../components/encabezados/EncabezadoL';
 import '../styles/pages/login.css';
-import InputG from '../components/inputs/InputG';
-
+import FormContainer from '../components/contenedores/FormContainer';
 
 function LoginPage() {
+  const [showFormContainer, setShowFormContainer] = useState(false);
+
+  const toggleFormContainer = () => {
+    setShowFormContainer(!showFormContainer);
+  };
 
   return (
     <div id='login'>
-      <EncabezadosL/>
-      <InputG etiqueta="" nombre="email" texto1="Email"/>
+      <EncabezadosL toggleFormContainer={toggleFormContainer} />
+      {showFormContainer && <FormContainer />}
     </div>
   );
 }

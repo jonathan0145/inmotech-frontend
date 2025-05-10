@@ -1,12 +1,14 @@
 import React from "react";
-// import '../../styles/botones/BotonFacil2.css';
+// import '../../styles/inputs/InputG.css';
 
-function InputG({etiqueta, nombre, texto1}){
+function InputG({ icon: Icon, nombre, texto1 }) {
     return (
-        <div class="input-box">
-            <span class="icon">{etiqueta}</span>
+        <div className="input-box">
+            <span className="icon">
+                {Icon && <Icon />} {/* Renderiza el icono si se proporciona */}
+            </span>
             <input type={nombre} required />
-            <label for={nombre}>{texto1}</label>
+            <label htmlFor={nombre}>{texto1}</label>
         </div>
     );
 }

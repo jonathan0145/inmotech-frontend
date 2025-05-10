@@ -1,5 +1,5 @@
 import React from "react";
-import '../../styles/botones/BotonFacil2.css';
+// import '../../styles/botones/BotonFacil2.css';
 
 function BotonFacil2({ texto, onClick }){
     return (

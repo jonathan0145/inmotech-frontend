@@ -1,0 +1,19 @@
+.formbox{
+    width: 100%;
+    padding: 40px;
+}
+.formbox.login{
+    transition: transform .18s ease;
+    transform: translateX(0);
+
+}
+.formbox.register{
+    position: absolute;
+    transition: none;
+    transform: translateX(400px);
+}
+.formbox h2{
+    font-size: 2em;
+    color: #162938;
+    text-align: center;
+}
